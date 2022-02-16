@@ -52,6 +52,15 @@ const routes: Routes = [
     path: 'addaccount',
     loadChildren: () => import('./user_module/userpage/makepayment/addaccount/addaccount.module').then( m => m.AddaccountPageModule)
   },
+  {
+    path: 'push-notification',
+    loadChildren: () => import('./user_module/userpage/push-notification/push-notification.module').then( m => m.PushNotificationPageModule)
+  },
+  {
+    path: 'details',
+    loadChildren: () => import('./user_module/userpage/details/details.module').then( m => m.DetailsPageModule)
+  },
+  
 ];
 
 @NgModule({

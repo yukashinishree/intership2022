@@ -24,10 +24,7 @@ const routes: Routes = [
     path: 'details',
     loadChildren: () => import('./details/details.module').then( m => m.DetailsPageModule)
   },
-  {
-    path: 'qr-code',
-    loadChildren: () => import('./qr-code/qr-code.module').then( m => m.QrCodePageModule)
-  },
+ 
   
   {
     path: 'push-notification',
